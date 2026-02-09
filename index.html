@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI in Sports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="p-6">
+
+  <h1 class="text-3xl font-bold mb-4">AI in Sports</h1>
+
+  <button class="bg-blue-500 text-white p-2 mr-2"
+          onclick="changeText('training')">
+    Training
+  </button>
+
+  <button class="bg-green-500 text-white p-2"
+          onclick="changeText('ethics')">
+    Ethics
+  </button>
+
+  <p id="content" class="mt-4">
+    Click a section to learn more.
+  </p>
+
+  <script>
+    function changeText(section) {
+      if (section === "training") {
+        document.getElementById("content").innerText =
+          "AI helps athletes train using performance data.";
+      }
+
+      if (section === "ethics") {
+        document.getElementById("content").innerText =
+          "AI in sports raises fairness and privacy concerns.";
+      }
+    }
+  </script>
+
+</body>
+</html>
