@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI in Sports</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -14,13 +15,15 @@
   </h1>
 
   <div class="flex gap-2 mb-4 justify-center">
-    <button class="bg-blue-500 text-white p-2 rounded shadow hover:bg-blue-600"
-            onclick="changeText('training')">
+    <button type="button"
+      class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-600"
+      onclick="changeText('training')">
       Training
     </button>
 
-    <button class="bg-green-500 text-white p-2 rounded shadow hover:bg-green-600"
-            onclick="changeText('ethics')">
+    <button type="button"
+      class="bg-green-500 text-white px-4 py-2 rounded shadow hover:bg-green-600"
+      onclick="changeText('ethics')">
       Ethics
     </button>
   </div>
@@ -36,13 +39,11 @@
       const content = document.getElementById("content");
 
       if (section === "training") {
-        content.innerText =
-          "AI helps athletes train using performance data like GPS tracking, heart rate, and workload. Coaches use it to adjust intensity and improve performance.";
-      }
-
-      if (section === "ethics") {
-        content.innerText =
-          "AI in sports raises fairness and privacy concerns. Athlete biometric data is sensitive, and richer teams may gain advantages from better technology.";
+        content.textContent =
+          "AI helps athletes train using performance data (GPS tracking, heart rate, workload) to adjust intensity and improve performance.";
+      } else if (section === "ethics") {
+        content.textContent =
+          "AI in sports raises fairness and privacy concerns. Athlete biometric data is sensitive, and richer teams may have better access to technology.";
       }
     }
   </script>
