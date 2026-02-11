@@ -9,108 +9,49 @@
 
 <body class="p-6 bg-gray-100 font-sans">
 
-  <!-- Header -->
   <header class="max-w-5xl mx-auto mb-6">
     <div class="bg-white rounded-xl shadow border p-6">
       <h1 class="text-3xl font-bold text-center text-blue-700 mb-2">AI in Sports</h1>
       <p class="text-gray-700 text-center">
         Click a topic to explore how AI affects performance, health, fairness, and society.
       </p>
-      <p class="text-sm text-gray-500 text-center mt-2">
-        This page uses Tailwind (CDN) + JavaScript to act like a simple Single Page Application (SPA).
-      </p>
     </div>
   </header>
 
-  <!-- Tabs / Buttons -->
+  <!-- Tabs -->
   <div class="max-w-5xl mx-auto flex flex-wrap gap-3 justify-center mb-6">
-    <button type="button"
-      class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition"
-      onclick="changeText('training')">
-      Training
-    </button>
+    <button class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600"
+            onclick="changeText('training')">Training</button>
 
-    <button type="button"
-      class="bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600 transition"
-      onclick="changeText('injury')">
-      Injury Prevention
-    </button>
+    <button class="bg-purple-500 text-white px-4 py-2 rounded-lg shadow hover:bg-purple-600"
+            onclick="changeText('injury')">Injury Prevention</button>
 
-    <button type="button"
-      class="bg-green-500 text-white px-4 py-2 rounded-lg shadow hover:bg-green-600 transition"
-      onclick="changeText('ethics')">
-      Ethics
-    </button>
+    <button class="bg-red-500 text-white px-4 py-2 rounded-lg shadow hover:bg-red-600"
+            onclick="changeText('fairness')">Fairness</button>
 
-    <button type="button"
-      class="bg-gray-800 text-white px-4 py-2 rounded-lg shadow hover:bg-gray-900 transition"
-      onclick="changeText('privacy')">
-      Privacy
-    </button>
+    <button class="bg-teal-500 text-white px-4 py-2 rounded-lg shadow hover:bg-teal-600"
+            onclick="changeText('scouting')">Scouting & Recruiting</button>
 
-    <button type="button"
-      class="bg-red-500 text-white px-4 py-2 rounded-lg shadow hover:bg-red-600 transition"
-      onclick="changeText('fairness')">
-      Fairness
-    </button>
+    <button class="bg-amber-500 text-white px-4 py-2 rounded-lg shadow hover:bg-amber-600"
+            onclick="changeText('future')">Future Impact</button>
 
-    <button type="button"
-      class="bg-indigo-500 text-white px-4 py-2 rounded-lg shadow hover:bg-indigo-600 transition"
-      onclick="changeText('officiating')">
-      Officiating (VAR)
-    </button>
-
-    <button type="button"
-      class="bg-teal-500 text-white px-4 py-2 rounded-lg shadow hover:bg-teal-600 transition"
-      onclick="changeText('scouting')">
-      Scouting & Recruiting
-    </button>
-
-    <button type="button"
-      class="bg-amber-500 text-white px-4 py-2 rounded-lg shadow hover:bg-amber-600 transition"
-      onclick="changeText('future')">
-      Future Impact
-    </button>
-
-    <button type="button"
-      class="bg-slate-600 text-white px-4 py-2 rounded-lg shadow hover:bg-slate-700 transition"
-      onclick="changeText('examples')">
-      Examples
-    </button>
+    <button class="bg-slate-600 text-white px-4 py-2 rounded-lg shadow hover:bg-slate-700"
+            onclick="changeText('examples')">Examples</button>
   </div>
 
-  <!-- Main Layout -->
   <main class="max-w-5xl mx-auto grid md:grid-cols-3 gap-6">
-    <!-- Dynamic content -->
     <section class="md:col-span-2">
       <div class="bg-white rounded-xl shadow border p-6">
         <h2 class="text-xl font-bold mb-2 text-gray-900">Info Panel</h2>
 
         <p id="content" class="mt-2 text-gray-700 leading-relaxed">
-          Click a section above to learn more. This text will update without reloading the page.
+          Click a section above to learn more.
         </p>
-
-        <div class="mt-4 p-4 bg-gray-50 rounded-lg border">
-          <p class="text-sm text-gray-600">
-            <span class="font-semibold">SPA behavior:</span> each button calls <span class="font-mono">changeText()</span>,
-            which swaps what you see in the panel.
-          </p>
-        </div>
       </div>
     </section>
 
-    <!-- Sidebar (static) -->
-    <aside class="space-y-6">
-      <div class="bg-white rounded-xl shadow border p-5">
-        <h3 class="font-bold text-gray-900 mb-2">Big Questions</h3>
-        <ul class="list-disc pl-5 text-gray-700 space-y-1">
-          <li>Who owns athlete data?</li>
-          <li>Does AI increase fairness or create bias?</li>
-          <li>Will rich teams gain bigger advantages?</li>
-          <li>How much should coaches rely on AI?</li>
-        </ul>
-      </div>
-
+    <!-- Key Terms -->
+    <aside>
       <div class="bg-white rounded-xl shadow border p-5">
         <h3 class="font-bold text-gray-900 mb-2">Key Terms</h3>
         <div class="flex flex-wrap gap-2">
@@ -118,14 +59,13 @@
           <span class="text-xs px-2 py-1 rounded-full bg-green-100 text-green-700">workload</span>
           <span class="text-xs px-2 py-1 rounded-full bg-purple-100 text-purple-700">prediction</span>
           <span class="text-xs px-2 py-1 rounded-full bg-red-100 text-red-700">bias</span>
-          <span class="text-xs px-2 py-1 rounded-full bg-gray-200 text-gray-800">privacy</span>
         </div>
       </div>
     </aside>
   </main>
 
   <footer class="max-w-5xl mx-auto mt-8 text-center text-sm text-gray-500">
-    Built with Tailwind CDN + JavaScript (no npm). Hosted on GitHub Pages.
+    Built with Tailwind CDN + JavaScript. Hosted on GitHub Pages.
   </footer>
 
   <script>
@@ -134,47 +74,32 @@
 
       if (section === "training") {
         content.innerText =
-          "Training: AI is used to personalize training plans by analyzing GPS distance, sprint counts, accelerations, heart rate, and recovery trends. Instead of guessing, coaches can identify when an athlete is improving, plateauing, or showing fatigue. AI can also break down game film to spot patterns (like positioning mistakes, passing options, or spacing) and then recommend specific drills. The benefit is smarter training that targets weaknesses and reduces unnecessary workload.";
+          "Training: AI analyzes athlete performance data like speed, heart rate, and workload to help coaches design better practices and recovery plans.";
       }
 
       if (section === "injury") {
         content.innerText =
-          "Injury Prevention: AI models can flag risk when workload increases too quickly (for example, a sudden jump in sprint volume or minutes played). It can also track movement quality—changes in stride, landing mechanics, or asymmetry—where small differences can signal fatigue or compensation. Teams use this to plan rest days, adjust practice intensity, and improve return-to-play decisions. This is useful, but it should support medical staff—not replace them.";
-      }
-
-      if (section === "ethics") {
-        content.innerText =
-          "Ethics: AI brings benefits, but also major concerns. If coaches rely too heavily on numbers, athletes might be treated like data instead of people. AI can also be wrong if it is trained on incomplete or biased data. Another ethical issue is pressure: athletes may feel forced to share data to keep their spot on the team. Ethical AI in sports means transparency, consent, and making sure humans still make the final decisions.";
-      }
-
-      if (section === "privacy") {
-        content.innerText =
-          "Privacy: Sports technology often collects sensitive information like heart rate, sleep quality, stress, injury history, and even location data. Big questions: Who owns this data—the athlete, the team, or the tech company? How long is it stored? Can it be shared with sponsors or scouts? Strong privacy practices include clear consent, limited access, secure storage, and letting athletes see what is being collected and why.";
+          "Injury Prevention: AI can detect fatigue patterns and risky workload spikes, helping prevent injuries and guide return-to-play decisions.";
       }
 
       if (section === "fairness") {
         content.innerText =
-          "Fairness: AI can improve fairness by reducing human error, but it can also create new inequality. Wealthier programs can buy better sensors, better software, and hire analysts—giving them an advantage. Also, AI can reflect bias if the data doesn’t represent all athletes equally (for example, different body types, genders, or levels of competition). Fairness means equal access to technology and careful testing to avoid biased outcomes.";
-      }
-
-      if (section === "officiating") {
-        content.innerText =
-          "Officiating (VAR): Video Assistant Referee systems use technology to review calls, aiming to reduce mistakes. The upside is fewer obvious errors. The downside is controversy about consistency and interpretation—technology can show angles, but humans still decide what counts as a foul or handball. This changes the fan experience and raises questions about how much technology should influence the flow and spirit of the game.";
+          "Fairness: Teams with better technology may gain advantages. AI must be used carefully to avoid creating inequality in sports.";
       }
 
       if (section === "scouting") {
         content.innerText =
-          "Scouting & Recruiting: AI tools can analyze player video and stats to identify talent. They can track things like speed, decision-making, passing accuracy, and positioning. This can help find overlooked players, but it can also overvalue measurable stats and undervalue leadership, teamwork, and context. If scouting is driven only by data, players with fewer resources (less exposure, less film, fewer showcases) may get ignored.";
+          "Scouting & Recruiting: AI tools analyze video and statistics to identify talent and evaluate player performance more efficiently.";
       }
 
       if (section === "future") {
         content.innerText =
-          "Future Impact: AI will likely become more common at every level, from youth to pro. Coaches may use AI for opponent analysis, practice planning, and even substitution suggestions. Wearables may become standard, meaning data culture in sports will grow. Society will have to decide rules for privacy, fairness, and data ownership. The best outcome is AI that supports athletes and coaches while protecting rights and keeping competition fair.";
+          "Future Impact: AI will continue shaping training, analytics, and decision-making in sports at all levels.";
       }
 
       if (section === "examples") {
         content.innerText =
-          "Examples: Wearables (GPS + heart-rate straps) track workload and recovery. Video analysis can highlight spacing, shot selection, or defensive mistakes. Officiating tech like goal-line technology and VAR aims to reduce errors. AI scouting platforms rank players based on film and statistics. These tools can improve performance and decisions, but they create privacy issues and can widen the gap between programs with different budgets.";
+          "Examples: Wearable trackers, performance analytics software, and video-analysis tools are already common in modern athletics.";
       }
     }
   </script>
